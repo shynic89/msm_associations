@@ -43,9 +43,17 @@
 
               <!-- Label and input for movie_id -->
       <div class="form-group">
-       <label for="movie_id" class="hidden">
-        </label>
+       <!--<label for="director_id" class="hidden">-->
+       <!-- </label>-->
+        <input type="hidden" id="director_id" name="director_id" value=" <%= @director.id %>">
+        
+      </div>
+      
+        <div class="form-group">
+       <!--<label for="director_id" class="hidden">-->
+       <!-- </label>-->
         <input type="hidden" id="movie_id" name="movie_id" value=" <%= @movie.id %>">
+        
       </div>
 
       <!-- Label and input for actor_id -->
