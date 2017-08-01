@@ -13,6 +13,8 @@ class CharactersController < ApplicationController
 
   def new
     @character = Character.new
+    @actor = Actor.new
+    @movie = Movie.new
 
     render("characters/new.html.erb")
   end

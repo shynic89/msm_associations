@@ -8,6 +8,7 @@ class MoviesController < ApplicationController
   def show
     @movie = Movie.find(params[:id])
     @character = Character.new
+    @director = Director.new
 
     render("movies/show.html.erb")
   end

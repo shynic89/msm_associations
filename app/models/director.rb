@@ -14,7 +14,7 @@
 class Director < ApplicationRecord
     
 #  - name: must be present; must be unique in combination with dob
-validates :name, :presence => true
+validates :name, :presence => true, :uniqueness => {:scope => :dob}
 #  - dob: no rules
 # validates :dob, :presence => true
 #  - bio: no rules
