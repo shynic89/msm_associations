@@ -24,10 +24,14 @@
       <dd>
         <ul>
         <% Character.where(:actor_id => @actor.id).each do |m| %>
-          <li><%= Movie.find(m.movie_id).title %> </li>
+          <li>
+            <% character = m.movie_id %> 
+            <%= Movie.find(character).title %>
+          </li>
          <% end %>
          </ul>
       </dd>
+      
       <dt>Add a new character</dt>
       <dd>
         <form action="/create_character" method="post">

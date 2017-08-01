@@ -24,4 +24,5 @@ validates :name, :presence => true, :uniqueness => {:scope => :dob}
 
 #  - description: no rules
 #  - image_url: no rules
+has_many :movies
 end
