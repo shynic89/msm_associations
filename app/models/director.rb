@@ -16,11 +16,11 @@ class Director < ApplicationRecord
 #  - name: must be present; must be unique in combination with dob
 validates :name, :presence => true
 #  - dob: no rules
-validates :dob, :presence => true
+# validates :dob, :presence => true
 #  - bio: no rules
-validates :bio, :presence => true
+# validates :bio, :presence => true
 #  - image_url: no rules
-validates :image_url, :presence => true
+# validates :image_url, :presence => true
 
 #  - description: no rules
 #  - image_url: no rules
